@@ -2,10 +2,10 @@
 		<div class="top_line">
 			<div class="cr">
 			<div class="search fl_l">
-					<form>
-						<input placeholder="Поиск..." type="text">
+					<form action="/news/search/">
+						<input placeholder="Поиск..." type="text" name="q">
 						<div class="sub_b">
-							<button type="button"></button>
+							<button type="submit"></button>
 						</div>
 					</form>
 				</div>
@@ -90,7 +90,7 @@
 							<a href="/<?=$lang?>news">Новости</a>
 						</li>
 						<li>
-							<a href="/<?=$lang?>news">Государственные символы</a>
+							<a href="/<?=$lang?>gosudarstvennyi_simvol">Государственные символы</a>
 						</li>
 
 					</ul>

@@ -120,6 +120,9 @@
     width: 99.2%;
     display: block;
 }
+.search.pages input {
+    width: 93%;
+}
 .search.fl_l input {
     width: 80%;
 }
@@ -527,6 +530,7 @@
     margin-top: 0px;
     float: right;
 }
+
 .soc_seti.footers::before {
     position: relative;
     display: block;
