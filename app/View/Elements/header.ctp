@@ -38,11 +38,14 @@
 						<input placeholder="Поиск..." type="text" name="q">
 						<div class="sub_b">
 							<button type="submit"></button>
+							<span class="over-search"> </span>
 						</div>
 					</form>
 				</div>
 				<div class="header_buttons">
-					<a href="/join"><div class="buttons"> Прием в партию</div></a>
+					<a href="/join"><div class="buttons"> Прием в партию
+
+					</div></a>
 					<a href="/join"><div class="buttons">Общественная приемная</div></a>
 				</div>
 				<div class="bg_head"></div>

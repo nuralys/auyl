@@ -25,7 +25,12 @@ CKEDITOR.editorConfig = function( config ) {
 		{ name: 'colors' },
 		{ name: 'about' }
 	];
-	config.allowedContent = true;
+	
+	//config.allowedContent = true;
+	 config.allowedContent = 'p em{*}';
+	 config.disallowedContent = '*{font*}';
+	 // Input:       <p style="color: red; font-size: 12px"><em style="font: 'Arial'">Foo</em></p>
+	 // Filtered:    <p style="color: red"><em>Foo</em></p>
 	// Remove some buttons provided by the standard plugins, which are
 	// not needed in the Standard(s) toolbar.
 	config.removeButtons = 'Underline,Subscript,Superscript';
