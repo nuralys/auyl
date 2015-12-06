@@ -130,8 +130,8 @@ $(document).ready(function () {
         dots: false,
         centerMode: false,
         focusOnSelect: true,
-         prevArrow: '<span class="slick-prev slick-nav slick-nav--prev" aria-label="previous"></span>',
-        nextArrow: '<span class="slick-next slick-nav slick-nav--next" aria-label="next"></span>'
+         prevArrow: '<span class="slick-prev slick-nav photo-nav--prev" aria-label="previous"></span>',
+        nextArrow: '<span class="slick-next slick-nav photo-nav--next" aria-label="next"></span>'
     });
     
 });

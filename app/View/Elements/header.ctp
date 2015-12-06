@@ -1,6 +1,20 @@
 <header>
 		<div class="top_line">
 			<div class="cr">
+			<div class="search fl_l">
+					<form>
+						<input placeholder="Поиск..." type="text">
+						<div class="sub_b">
+							<button type="button"></button>
+						</div>
+					</form>
+				</div>
+			<div class="soc_seti_container">
+						<a href="https://www.facebook.com/%D0%9D%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%BE-%D0%B4%D0%B5%D0%BC%D0%BE%D0%BA%D1%80%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F-%D0%BF%D0%B0%D1%82%D1%80%D0%B8%D0%BE%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F-%D0%BF%D0%B0%D1%80%D1%82%D0%B8%D1%8F-%D0%90%D1%83%D1%8B%D0%BB-1045999888764173/" class="soc_seti facebook" target="_blank"></a>
+						<a href="" class="soc_seti insta"></a>
+						<a href="https://twitter.com/NdppAuyl" target="_blank" class="soc_seti twit"></a>
+
+					</div>
 				<div class="lang">
 					<a href="/kz">KZ</a>
 					|
@@ -32,14 +46,14 @@
 					<a href="/join"><div class="buttons">Общественная приемная</div></a>
 				</div>
 				<div class="bg_head"></div>
-				<div class="menu">
+				<div class="menu" id="nav">
 					<ul class="menu_list">
 						<li>
 							<a href="/<?=$lang?>" class="active"><?php echo __('Главная')?></a>
 						</li>
 						<li>
 							<a href="">
-								История партии
+								 Партия
 								<span></span>
 							</a>
 							<ul class="sub_menu">
@@ -49,7 +63,9 @@
 								<li>
 									<a href="/<?=$lang?>pages/istoriya_partii_patriotov_kazakhstana">История Партии Патриотов Казахстана</a>
 								</li>
-								
+								<li>
+							<a href="/<?=$lang?>pages/kontakty">Контакты</a>
+						</li>
 							</ul>
 						</li>
 						<li>
@@ -74,16 +90,16 @@
 							<a href="/<?=$lang?>news">Новости</a>
 						</li>
 						<li>
-							<a href="/<?=$lang?>pages/kontakty">Контакты</a>
+							<a href="/<?=$lang?>news">Государственные символы</a>
 						</li>
 
 					</ul>
-					<div class="soc_seti_container">
-						<a href="https://www.facebook.com/%D0%9D%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%BE-%D0%B4%D0%B5%D0%BC%D0%BE%D0%BA%D1%80%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F-%D0%BF%D0%B0%D1%82%D1%80%D0%B8%D0%BE%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F-%D0%BF%D0%B0%D1%80%D1%82%D0%B8%D1%8F-%D0%90%D1%83%D1%8B%D0%BB-1045999888764173/" class="soc_seti facebook" target="_blank"></a>
-						<a href="" class="soc_seti insta"></a>
-						<a href="https://twitter.com/NdppAuyl" target="_blank" class="soc_seti twit"></a>
-
-					</div>
+					<script>
+			      var navigation = responsiveNav("#nav", {
+			        insert: "before"
+			      });
+			    </script>
+					
 				</div>
 			</div>
 		</div>

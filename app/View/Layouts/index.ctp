@@ -5,6 +5,23 @@
 	<title>
 		<?php echo $title_for_layout ?>
 	</title>
+	<link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/img/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/img/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/img/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/img/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/img/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/img/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/img/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/img/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/img/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+
+<meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<?php if(isset($meta['keywords'])): ?>
 		<meta name="keywords" content="<?=$meta['keywords']?>">
 	<?php endif; ?>
@@ -12,17 +29,18 @@
 		<meta name="description" content="<?=$meta['description']?>">
 	<?php endif; ?>
 	<?php
-		echo $this->Html->meta('icon');
+		
 
-		echo $this->Html->css(array('reset', 'style', 'slide', 'jquery.fancybox.css?v=2.1.5'));
+		echo $this->Html->css(array('reset', 'style', 'slide', 'jquery.fancybox.css?v=2.1.5', ));
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
-		echo $this->Html->script(array('jquery-2.1.4', 'jquery.fancybox.pack.js?v=2.1.5', 'app','ckeditor/ckeditor.js'));
+		echo $this->Html->script(array('jquery-2.1.4', 'jquery.fancybox.pack.js?v=2.1.5', 'app','ckeditor/ckeditor.js','responsive-nav'));
 	?>
 </head>
 <body>
+<div class="page">
 	<?php echo $this->element('header'); ?>
 	<div class="cr">
 		<div class="container">
@@ -36,6 +54,7 @@
 			</div>
 			<?php echo $this->element('sidebar') ?>
 		</div>
+	</div>
 	</div>
 	<footer>
 		<div class="footer">
