@@ -110,7 +110,7 @@ class NewsController extends AppController{
 		$search = !empty($_GET['q']) ? $_GET['q'] : null;
 		if(is_null($search)){
 			$search_res = 'Введите пойсковый запрос...';
-			return $this->set(compact('search_res', 'news'));
+			return $this->set(compact('search_res'));
 		}
 		$title_for_layout = 'Поиск';
 		$search_res = $this->News->query("SELECT * FROM news 
