@@ -90,7 +90,7 @@
 							<a href="/<?=$lang?>news">Новости</a>
 						</li>
 						<li>
-							<a href="/<?=$lang?>gosudarstvennyi_simvol">Государственные символы</a>
+							<a href="/<?=$lang?>pages/gosudarstvennyi_simvoly">Государственные символы</a>
 						</li>
 
 					</ul>
