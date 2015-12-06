@@ -24,7 +24,7 @@
 		<p>
 <?= $this->Text->truncate(strip_tags($item['news']['body']), 55, array('ellipsis' => '...', 'exact' => true)) ?>
 		</p>
-		<div class="date_min"><?php echo $this->Time->format($item['news']['date'], '%d.%m.%Y', 'invalid'); ?>5</div>
+		<div class="date_min"><?php echo $this->Time->format($item['news']['date'], '%d.%m.%Y', 'invalid'); ?></div>
 		</li>
 	<?php endforeach ?>
 	</ul>
